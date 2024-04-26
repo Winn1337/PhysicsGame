@@ -4,8 +4,10 @@
 public class Score
 {
     private static Score instance;
+    private Score()
+    {
 
-    private int score;
+    }
 
     public static Score Instance()
     {
@@ -13,6 +15,8 @@ public class Score
 
         return instance;
     }
+
+    private int score;
 
     public void Add(int score)
     {
@@ -27,5 +31,10 @@ public class Score
     public int Get()
     {
         return score;
+    }
+
+    public void Reset()
+    {
+        score = 0;
     }
 }

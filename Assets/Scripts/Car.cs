@@ -23,7 +23,6 @@ public class Car : MonoBehaviour
     public float normalizedSpeed;
     public float currentTorque;
     public bool accelerate;
-    public float rpm;
 
     [Header("Models")]
     public Transform[] wheelModels;
@@ -97,34 +96,22 @@ public class Car : MonoBehaviour
         //input < 0 => go left
         float input = rightInput - leftInput;
 
-        if (input == 0f)
-        {
-            foreach(var wheel in wheels)
-            {
-                wheel.motorTorque = 0f;
-            }
-        }
-
         //accelerate if input is same direction as speed
         accelerate = Mathf.Sign(input) == Mathf.Sign(forwardSpeed);
 
-        rpm = 0f;
-
         foreach(var wheel in wheels)
         {
+            wheel.motorTorque = 0f;
+            wheel.brakeTorque = 0f;
+
             if (accelerate)
             {
                 wheel.motorTorque = input * currentTorque;
-                wheel.brakeTorque = 0f;
             }
             else
             {
                 wheel.brakeTorque = Mathf.Abs(input) * brakeTorque;
-                wheel.motorTorque = 0f;
             }
-
-            if (wheel.rpm > rpm)
-                rpm = wheel.rpm;
         }
 
         leftInput = 0f;

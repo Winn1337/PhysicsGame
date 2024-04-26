@@ -3,17 +3,17 @@ Assignment instructions can be found [here](https://docs.google.com/document/d/1
 
 ### Formal requirements (mandatory)
 - A basic game loop
-    - A start line and a finish line.
-    - Elapsed time etc is displayed when the race is over.
-    - Ability to start over.
+    - ~~A start line and a finish line.~~
+    - ~~Elapsed time etc is displayed when the race is over.~~
+    - ~~Ability to start over.~~
 - A vehicle with,
     - ~~A body, wheels (two or more) and wheel suspensions.~~
     - ~~A basic model of an engine, where braking and accelerating torques are applied to the wheels based on user input and input duration. When the player holds down an acceleration button, for example, it should take a while before the maximum accelerating torque is reached.~~
 - ~~A game camera that follows the vehicle.~~
-- Track segments with a variety of slopes, ramps, pits etc.
-- Basic graphics with textures or solid colors.
+- ~~Track segments with a variety of slopes, ramps, pits etc.~~
+- ~~Basic graphics with textures or solid colors.~~
 - ~~Some form of collectible, e.g. coins.~~
-- A simple GUI that displays elapsed time and the number of obtained collectibles.
+- ~~A simple GUI that displays elapsed time and the number of obtained collectibles.~~
 - ~~User input from the keyboard or a controller.~~
 
 ### Other ideas (not mandatory)

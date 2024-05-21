@@ -13,4 +13,11 @@ public class Coin : MonoBehaviour
         score.Add(this.score);
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var score = Score.Instance();
+        score.Add(this.score);
+        Destroy(gameObject);
+    }
 }

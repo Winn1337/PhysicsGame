@@ -6,7 +6,7 @@ public class FinishLine : MonoBehaviour
     {
         var timer = Timer.Instance();
         timer.Stop();
-        gameObject.SetActive(false);
+        enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)

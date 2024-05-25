@@ -6,7 +6,7 @@ public class StartLine : MonoBehaviour
     {
         var timer = Timer.Instance();
         timer.Start();
-        gameObject.SetActive(false);
+        enabled = false;
     }
 
     private void OnTriggerExit(Collider other)

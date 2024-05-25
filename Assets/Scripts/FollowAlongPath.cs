@@ -1,6 +1,10 @@
-using System.Drawing;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// UNFINISHED SCRIPT, DON'T USE
+/// 
+/// </summary>
 public class FollowAlongPath : MonoBehaviour
 {
     public Transform toFollow;
@@ -10,10 +14,32 @@ public class FollowAlongPath : MonoBehaviour
 
     public LineRenderer camPath;
 
+    private Vector3[] points;
+    private int closestPoint;
+
     void Start()
     {
         if (camPath == null)
             camPath = FindObjectOfType<LineRenderer>();
+
+
+        // get path points
+        Vector3[] points = new Vector3[camPath.positionCount];
+        for (int i = 0; i < points.Length; i++)
+            points[i] = camPath.GetPosition(i);
+
+        // get closest point
+        int closestPointIndex = 0;
+        float closestDistanceSqrd = (toFollow.position - points[closestPointIndex]).sqrMagnitude;
+        for (int i = 1; i < points.Length; i++)
+        {
+            float distanceSqrd = (toFollow.position - points[i]).sqrMagnitude;
+            if (distanceSqrd < closestDistanceSqrd)
+            {
+                closestPoint = i;
+                closestDistanceSqrd = distanceSqrd;
+            }
+        }
     }
 
     private void Update()
@@ -30,22 +56,27 @@ public class FollowAlongPath : MonoBehaviour
 
     private void Follow(float dt)
     {
-        // get path points
-        Vector3[] points = new Vector3[camPath.positionCount];
-        for (int i = 0; i < points.Length; i++)
-            points[i] = camPath.GetPosition(i);
+        int otherPoint = GetOtherPoint();
 
-        int closestPointIndex = 0;
-        float closestDistanceSqrd = (toFollow.position - points[closestPointIndex]).sqrMagnitude;
-        for (int i = 1; i < points.Length; i++)
+        // switch closest point
+        if (Vector3.Distance(toFollow.position, points[otherPoint]) < Vector3.Distance(toFollow.position, points[closestPoint]))
         {
-            float distanceSqrd = (toFollow.position - points[i]).sqrMagnitude;
-            if (distanceSqrd < closestDistanceSqrd)
-                closestPointIndex = i;
+            closestPoint = otherPoint;
+            otherPoint = GetOtherPoint();
         }
 
-        Vector3 closestPoint = points[closestPointIndex];
+        // DO STUFF HERE
+    }
 
-        Debug.DrawRay(closestPoint, Vector3.up);
+    private int GetOtherPoint()
+    {
+        if (closestPoint == 0)
+            return 1;
+        if (closestPoint == points.Length - 1)
+            return closestPoint - 1;
+
+        // DO STUFF HERE
+
+        return 0;
     }
 }

@@ -1251,7 +1251,6 @@ GameObject:
   - component: {fileID: 666372823}
   - component: {fileID: 666372826}
   - component: {fileID: 666372827}
-  - component: {fileID: 666372828}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1360,23 +1359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3734b4b3c0ff6f478e57f1abc2cd827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &666372828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666372822}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b22e33e5073bd724db800ac012f16295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toFollow: {fileID: 688226281}
-  offset: {x: 0, y: 0, z: 0}
-  t: 0
-  fixedUpdate: 0
-  camPath: {fileID: 1294812473}
 --- !u!4 &688226281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 395019010184262618, guid: 0e061163011364349b2eabf77de24261, type: 3}
@@ -2746,7 +2728,7 @@ LineRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
-  m_UseWorldSpace: 0
+  m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
 --- !u!4 &1294812474

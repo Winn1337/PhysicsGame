@@ -25,6 +25,13 @@
 - Local co-op.
 - Some kind of fuel system. Fuel is consumed based on the amount of applied torque and may run out. Fuel can be replenished by picking up fuel canisters along the course. Perhaps fuel adds to the mass and moment of inertia of the vehicle depending on the location of the fuel tank inside the vehicle.
 
+## Credits:
+- [Explosion VFX](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fire-explosion-vfx-48795)
+- [Car sound](https://freesound.org/people/willybilly1984/sounds/345335/)
+- [Explosion sound](https://freesound.org/people/sandyrb/sounds/95078/)
+- [Coin sound](https://freesound.org/people/creek23/sounds/75235/)
+- [Cheer sound](https://freesound.org/people/tim.kahn/sounds/337000/)
+
 ## Helpful information:
 - [Unity Wheel Collider Tutorial](https://docs.unity3d.com/Manual/WheelColliderTutorial.html)
 - [Making Custom Car Physics in Unity](https://youtu.be/CdPYlj5uZeI?si=C7lmihYFA4JFUSyO)

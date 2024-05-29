@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 2446768066296130759}
   - component: {fileID: 2806982046527491965}
   m_Layer: 7
-  m_Name: Cube
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 5425244457307503682}
   - component: {fileID: 6003068300419988754}
   m_Layer: 7
-  m_Name: Square
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

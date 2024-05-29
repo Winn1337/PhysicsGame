@@ -125,7 +125,6 @@ public class Car2D : MonoBehaviour
 
             var motor = joint.motor;
 
-
             if (Input.GetKey(handbrake))
                 motor.motorSpeed = 0f;
             else if (Mathf.Sign(input) == Mathf.Sign(motor.motorSpeed))

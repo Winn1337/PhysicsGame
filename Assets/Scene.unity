@@ -4090,13 +4090,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188040822927420256, guid: 0e061163011364349b2eabf77de24261, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2820607326935053280, guid: 0e061163011364349b2eabf77de24261, type: 3}
       propertyPath: HUD
       value: 
       objectReference: {fileID: 4276975}
+    - target: {fileID: 2878326085039622425, guid: 0e061163011364349b2eabf77de24261, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3783867492177409198, guid: 0e061163011364349b2eabf77de24261, type: 3}
       propertyPath: m_Name
       value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830083705755949321, guid: 0e061163011364349b2eabf77de24261, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071013423470600696, guid: 0e061163011364349b2eabf77de24261, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798427710488299184, guid: 0e061163011364349b2eabf77de24261, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7861952937739777722, guid: 0e061163011364349b2eabf77de24261, type: 3}
       propertyPath: m_LocalPosition.x

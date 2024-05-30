@@ -1,4 +1,7 @@
-# "Physics Game"
+# "Physics Game" (WIP)
+This game is currently in production! I plan on releasing it on Itch when I'm happy with it :)
+
+![Screenshot from Physics Game in its current state](/image.png)
 ## Uni project
 This game started as a project in a game physics course. The minimum requirements for the project were the following:
 - A basic game loop

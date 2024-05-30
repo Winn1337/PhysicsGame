@@ -2,7 +2,7 @@
 This game is currently in production! I plan on releasing it on Itch when I'm happy with it :)
 
 ![Screenshot from Physics Game in its current state](/image.png)
-## Uni project
+
 This game started as a project in a game physics course. The minimum requirements for the project were the following:
 - A basic game loop
     - A start line and a finish line.
@@ -17,6 +17,7 @@ This game started as a project in a game physics course. The minimum requirement
 - Some form of collectible, e.g. coins.
 - A simple GUI that displays elapsed time and the number of obtained collectibles.
 - User input from the keyboard or a controller.
+
 ## Credits:
 - Core games studio - [Fire Explosion VFX](https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fire-explosion-vfx-48795)
 - willybilly1984 - [RFX_Car Engine, Acelerator and Switch Off](https://freesound.org/people/willybilly1984/sounds/345335/)
